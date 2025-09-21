@@ -1,0 +1,49 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Moon",
+  "scopeName": "source.moon",
+  "patterns": [
+    { "include": "#tags" },
+    { "include": "#strings" }
+  ],
+  "repository": {
+    "tags": {
+      "patterns": [{
+        "name": "meta.tag.moon",
+        "begin": "(<)(/?)([a-zA-Z0-9\\-]+)",
+        "beginCaptures": {
+          "1": { "name": "punctuation.definition.tag.begin.moon" },
+          "2": { "name": "punctuation.definition.tag.begin.moon" },
+          "3": { "name": "entity.name.tag.moon" }
+        },
+        "end": "(>)",
+        "endCaptures": {
+          "1": { "name": "punctuation.definition.tag.end.moon" }
+        },
+        "patterns": [
+          { "include": "#attributes" }
+        ]
+      }]
+    },
+    "attributes": {
+      "patterns": [{
+        "begin": "([a-zA-Z\\-]+)\\s*(=)",
+        "beginCaptures": {
+          "1": { "name": "entity.other.attribute-name.moon" },
+          "2": { "name": "punctuation.separator.key-value.moon" }
+        },
+        "end": "(?=[\\s/>])",
+        "patterns": [{ "include": "#strings" }]
+      }]
+    },
+    "strings": {
+      "name": "string.quoted.double.moon",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [{
+        "name": "constant.character.escape.moon",
+        "match": "\\\\."
+      }]
+    }
+  }
+}

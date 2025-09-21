@@ -1,0 +1,23 @@
+
+{
+
+  "Crear Bloque Moon": {
+    "prefix": "moonblock",
+    "body": [
+      "<moon-container id=\"$1\">",
+      "\t<title>$2</title>",
+      "\t<content>",
+      "\t\t$0",
+      "\t</content>",
+      "</moon-container>"
+    ],
+    "description": "Crea un bloque contenedor básico de Moon."
+  },
+  "Etiqueta simple": {
+    "prefix": "tag",
+    "body": [
+      "<$1>$2</$1>"
+    ],
+    "description": "Crea una etiqueta simple con apertura y cierre."
+  }
+}
