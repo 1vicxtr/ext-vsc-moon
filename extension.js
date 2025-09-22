@@ -3,7 +3,7 @@ const vscode = require('vscode');
 function activate(context) {
 
     // --- 1. PROVEEDOR DE AUTOCOMPLETADO (CORREGIDO) ---
-    const completionProvider = vscode.languages.registerCompletionItemProvider('moon', {
+    const completionProvider = vscode.languages.registerCompletionItemProvider('mn', {
         provideCompletionItems(document, position) {
             const visualHtmlTags = [
                 'div', 'p', 'span', 'a', 'img', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
@@ -39,7 +39,7 @@ function activate(context) {
     context.subscriptions.push(completionProvider);
 
     // --- 2. PROVEEDOR DE FORMATEO DE DOCUMENTO (MANUAL O AL GUARDAR) ---
-    const formattingProvider = vscode.languages.registerDocumentFormattingEditProvider('moon', {
+    const formattingProvider = vscode.languages.registerDocumentFormattingEditProvider('mn', {
         provideDocumentFormattingEdits(document) {
             const edits = [];
             let indentLevel = 0;
@@ -72,7 +72,7 @@ function activate(context) {
     context.subscriptions.push(formattingProvider);
     
     // --- 3. PROVEEDOR DE INDENTACIÓN AUTOMÁTICA (AL PRESIONAR ENTER) ---
-    const onTypeFormattingProvider = vscode.languages.registerDocumentOnTypeFormattingEditProvider('moon', {
+    const onTypeFormattingProvider = vscode.languages.registerDocumentOnTypeFormattingEditProvider('mn', {
         provideOnTypeFormattingEdits(document, position, ch, options) { /*...*/ }
     }, '\n');
     context.subscriptions.push(onTypeFormattingProvider);

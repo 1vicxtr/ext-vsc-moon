@@ -1,0 +1,10 @@
+{
+  "iconDefinitions": {
+    "_mn_icon": {
+      "iconPath": "./icons/icon_moon.png"
+    }
+  },
+  "fileExtensions": {
+    "mn": "_mn_icon"
+  }
+}
