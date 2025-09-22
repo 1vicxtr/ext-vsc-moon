@@ -44,8 +44,5 @@
         "path": "./syntaxes/moon.tmLanguage.json"
       }
     ]
-  },
-  "devDependencies": {
-    "@types/vscode": "^1.104.0"
   }
 }
