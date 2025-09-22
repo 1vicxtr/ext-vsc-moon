@@ -1,13 +1,10 @@
-# Soporte para Lenguaje Moon
+# Moon Language Support
 
-Esta es una extensión para Visual Studio Code que añade soporte para archivos con la extensión `.moon`.
+This is an extension for Visual Studio Code that adds support for files with the `.moon` extension.
 
-## Características
-
-* **Resaltado de Sintaxis**: Colores para etiquetas, atributos y valores.
-* **Autocompletado**: Sugerencias automáticas para etiquetas comunes.
-* **Formateo de Código**: Indentación automática para mantener el código limpio.
-
-## Uso
-
-Simplemente instala la extensión y abre cualquier archivo `.mn` para empezar a usarla.
+## Characteristics
+* **Syntax Highlighting**: Colors for labels, attributes, and values.
+* **Autocomplete**: Automatic suggestions for common tags.
+* **Code Formatting**: Automatic indentation to keep your code clean.
+## Use
+Simply install the extension and open any `.mn` file to start using it.
